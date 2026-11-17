@@ -28,16 +28,37 @@ python3 -m http.server 8080
 
 **Esc / Ⅱ** — пауза. В скрытой вкладке и открытом магазине забег приостанавливается. При перезагрузке сохранённый забег открывается на паузе. Кошелёк, купленные скины, эффект золотого следа, рекорд и количество завершённых забегов сохраняются в `localStorage`. Магазин использует только игровые монеты. Данные локальны для браузера и адреса; в режиме `file://` поведение хранилища зависит от браузера. При запрете хранилища игра продолжает работать в текущей вкладке.
 
+## Кампания «Путь контрибьютора»
+
+Над трассой находится карта из четырёх локаций. Каждая локация — отдельный семинар: вопросы в ней только по своей теме, а фон трассы выглядит по-своему.
+
+| # | Локация | Темы | Бейдж |
+|---|---------|------|-------|
+| 1 | Остров Open Source | история, лицензии | Open Source Explorer |
+| 2 | Деревня сообщества | культура контрибуции, maintainers и contributors | Community Voice |
+| 3 | Гора GitHub | commit, branch, fork, pull request | Git Master |
+| 4 | Город DPG | DPG Alliance, DPG Standard, DPG Registry | DPG Expert |
+
+- **Сюжет.** Игрок — новый contributor, который хочет стать maintainer'ом и вывести проект в DPG Registry. Перед каждой локацией мейнтейнер Мира коротко объясняет тему. После ошибки её подсказка появляется в разборе ответа.
+- **Карта с прогрессом.** Открыта только первая локация. Следующая открывается после merge PR в предыдущей; пройденные подсвечиваются и получают бейдж.
+- **Коммиты.** Каждый верный ответ на уровне — коммит (на платформах вместо монет висят узлы коммитов). Уровень — 8 вопросов, 3 жизни и чекпоинты, как в обычном забеге.
+- **Pull Request.** После вопросов коммиты собираются в `git log`, игрок открывает PR, и финальные прыжки превращаются в три CI-проверки (например, lint → tests → review). После них PR мёржится и выдаётся бейдж.
+- **Финал.** После четырёх локаций звание меняется на Maintainer, а игра показывает все бейджи. Бейджи, звание, число коммитов и PR видны на карте; прогресс хранится в `localStorage` и сбрасывается кнопкой «Сбросить прогресс» (два нажатия).
+
+Локации и их темы задаются в `js/campaign.js`. Чтобы добавить локацию, допишите её в массив `locations`, добавьте строки `loc*`, `story*`, `terms*`, `outro*` и бейдж в `i18n/*.json`, а сцену — в `SCENES` (`js/ui.js`) и `backdrop` (`js/renderer.js`). В каждой локации должно быть не меньше 8 вопросов.
+
 ## Вопросы и источники
 
-36 оригинальных вопросов в двух языковых версиях:
+61 оригинальный вопрос в двух языковых версиях:
 
 - лицензии: MIT, GPL, Apache 2.0, AGPL, копилефт, пермиссивные лицензии;
 - Git и GitHub: fork, PR, issue, commit, merge, rebase, fetch, revert;
 - культура участия: CONTRIBUTING, кодекс поведения, SemVer, changelog, bug report;
-- история: GNU, Linux, FSF, OSI, свободы ПО, Debian Free Software Guidelines.
+- история: GNU, Linux, FSF, OSI, свободы ПО, Debian Free Software Guidelines;
+- сообщество: maintainers, contributors, good first issue, SECURITY.md, governance;
+- Digital Public Goods: DPG Alliance, 9 индикаторов DPG Standard, DPG Registry.
 
-У каждого вопроса есть пояснение и ссылка на первоисточник: [OSI](https://opensource.org/osd), [GNU](https://www.gnu.org/licenses/gpl-faq.html), [Git](https://git-scm.com/docs), [GitHub Docs](https://docs.github.com), [SemVer](https://semver.org/). Короткие пояснения предназначены для обучения, а конкретные обязанности определяются текстом применимой лицензии.
+У каждого вопроса есть пояснение и ссылка на первоисточник: [OSI](https://opensource.org/osd), [GNU](https://www.gnu.org/licenses/gpl-faq.html), [Git](https://git-scm.com/docs), [GitHub Docs](https://docs.github.com), [SemVer](https://semver.org/), [Open Source Guides](https://opensource.guide/), [DPG Standard](https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md), [DPG Registry](https://www.digitalpublicgoods.net/registry). Короткие пояснения предназначены для обучения, а конкретные обязанности определяются текстом применимой лицензии.
 
 **Силлабус `Introduction to OS_Gerassimov M.pdf` не был предоставлен в рабочей папке.** Набор составлен по темам из задания, без утверждения о соответствии отсутствующему документу. После добавления PDF следует сверить темы и дополнить набор.
 
@@ -68,12 +89,13 @@ index.html                 интерфейс и подключение скри
 style.css                  темы, адаптивность, reduced motion
 js/
   questions.js             загрузка, проверка, перемешивание
+  campaign.js              локации, порядок открытия, бейджи, git log
   physics.js               траектории, движение платформ
   renderer.js              Canvas, персонаж, камера, частицы
   game.js                  цикл, состояния, очки, чекпоинты
   ui.js                    интерфейс, магазин, i18n, хранилище
   bundled-data.js          генерируемая копия JSON для file://
-questions/{ru,en}.json      36 вопросов на каждом языке
+questions/{ru,en}.json      61 вопрос на каждом языке
 questions/schema.json      JSON Schema 2020-12
 i18n/{ru,en}.json           словари интерфейса
 assets/                    иконка и скриншоты

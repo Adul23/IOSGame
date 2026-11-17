@@ -6,7 +6,7 @@ Parkour.Game = class {
   }
   start(questions,options={}) {
     this.renderer.animation=null;this.questions=questions;this.earned=new Set();this.finalEarned=new Set();this.mistakes=[];this.correct=0;this.attempts=0;this.streak=0;this.options=options;
-    this.state={phase:'question',paused:false,index:0,lives:3,score:0,coins:0,checkpoint:0,remaining:20,timer:options.timer,gauge:0,finalJump:0};this.setQuestion();
+    this.state={phase:'question',paused:false,index:0,lives:3,score:0,coins:0,checkpoint:0,remaining:20,timer:options.timer,gauge:0,finalJump:0,location:options.location||null,prOpened:false};this.setQuestion();
   }
   setQuestion(){const s=this.state;s.phase='question';s.current=this.questions[s.index];s.remaining=20;s.selected=null;s.pendingWrong=false;this.cb.question(s);this.save();}
   answer(index){const s=this.state;if(s.phase!=='question'||s.paused)return;if(index!==-1&&(!Number.isInteger(index)||index<0||index>=s.current.answers.length))return;
@@ -21,7 +21,9 @@ Parkour.Game = class {
     if(s.index>=this.questions.length){this.startFinal();return;}this.setQuestion();
   }
   startFinal(){const s=this.state;s.phase='final';s.current=null;s.finalJump=0;s.gauge=0;s.remaining=20;this.cb.final(s);this.save();}
-  finalJump(){const s=this.state;if(s.phase!=='final'||s.paused)return;const zone=s.finalJump===0?.34:s.finalJump===1?.27:.20;const ok=Math.abs(s.gauge-.5)<zone/2;s.phase='finalAnimating';
+  // Campaign: the collected commits become a pull request before the CI jumps.
+  openPR(){const s=this.state;if(s.phase!=='final'||s.paused||!s.location||s.prOpened)return;s.prOpened=true;this.cb.final(s);this.save();}
+  finalJump(){const s=this.state;if(s.phase!=='final'||s.paused||(s.location&&!s.prOpened))return;const zone=s.finalJump===0?.34:s.finalJump===1?.27:.20;const ok=Math.abs(s.gauge-.5)<zone/2;s.phase='finalAnimating';
     if(!ok){s.lives--;s.finalJump=0;}this.save();this.renderer.animate(0,!ok,()=>{if(ok){if(!this.finalEarned.has(s.finalJump)){this.finalEarned.add(s.finalJump);s.score+=50;s.coins+=5;this.cb.coins(5);}s.finalJump++;}else{s.finalJump=0;}
       this.cb.finalResult(ok,s);if(s.lives<=0)this.finish(false);else if(s.finalJump>=3)this.finish(true);else{s.phase='final';this.save();this.cb.hud(s);}});
   }

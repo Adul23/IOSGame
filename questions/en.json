@@ -538,5 +538,380 @@
     "correct": 0,
     "explanation": "The Open Source Definition was adapted from the Debian Free Software Guidelines.",
     "source": "https://opensource.org/osd"
+  },
+  {
+    "id": "git-37",
+    "topic": "git",
+    "difficulty": 1,
+    "question": "What is a branch in Git?",
+    "answers": [
+      "A movable pointer to a commit, a separate line of work",
+      "A copy of the repository on another server",
+      "A release archive",
+      "A list of open issues"
+    ],
+    "correct": 0,
+    "explanation": "A Git branch is a lightweight movable pointer to a commit. New commits move it forward, which makes a branch a convenient separate line of work.",
+    "source": "https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"
+  },
+  {
+    "id": "git-38",
+    "topic": "git",
+    "difficulty": 1,
+    "question": "What does git clone do?",
+    "answers": [
+      "Copies a repository with its history to your machine",
+      "Creates a fork on GitHub",
+      "Discards local changes",
+      "Pushes commits to the server"
+    ],
+    "correct": 0,
+    "explanation": "git clone creates a local copy of a repository with its full history and sets up the origin remote.",
+    "source": "https://git-scm.com/docs/git-clone"
+  },
+  {
+    "id": "git-39",
+    "topic": "git",
+    "difficulty": 1,
+    "question": "What does git add do?",
+    "answers": [
+      "Stages changes for the next commit",
+      "Publishes changes to GitHub right away",
+      "Creates a new branch",
+      "Undoes the last commit"
+    ],
+    "correct": 0,
+    "explanation": "git add puts the current content of files into the index (staging area). The next git commit records exactly what was staged.",
+    "source": "https://git-scm.com/docs/git-add"
+  },
+  {
+    "id": "git-40",
+    "topic": "git",
+    "difficulty": 2,
+    "question": "Which command creates a branch and switches to it?",
+    "answers": [
+      "git switch -c name",
+      "git branch -d name",
+      "git push name",
+      "git log name"
+    ],
+    "correct": 0,
+    "explanation": "git switch -c creates a new branch and switches the working tree to it. The older equivalent is git checkout -b.",
+    "source": "https://git-scm.com/docs/git-switch"
+  },
+  {
+    "id": "community-41",
+    "topic": "community",
+    "difficulty": 1,
+    "question": "Who is a maintainer of an open source project?",
+    "answers": [
+      "A contributor responsible for the project: reviews and merges changes, runs releases",
+      "Anyone who starred the repository",
+      "Only the author of the first commit",
+      "A GitHub employee"
+    ],
+    "correct": 0,
+    "explanation": "Maintainers are contributors responsible for driving the project and organizing it: they accept changes, ship releases and set direction.",
+    "source": "https://opensource.guide/how-to-contribute/"
+  },
+  {
+    "id": "community-42",
+    "topic": "community",
+    "difficulty": 1,
+    "question": "Who is a contributor?",
+    "answers": [
+      "Anyone who has contributed something to the project",
+      "Only someone with write access",
+      "Only a paid developer",
+      "Only the license author"
+    ],
+    "correct": 0,
+    "explanation": "A contributor is anyone who has done something useful for the project: code, docs, translation, review or a bug report.",
+    "source": "https://opensource.guide/how-to-contribute/"
+  },
+  {
+    "id": "community-43",
+    "topic": "community",
+    "difficulty": 1,
+    "question": "Does fixing documentation or translating count as a contribution?",
+    "answers": [
+      "Yes, contributions are not only code",
+      "No, only code changes count",
+      "Only if it has tests",
+      "Only for maintainers"
+    ],
+    "correct": 0,
+    "explanation": "Projects need docs, translations, design, answering questions and issue triage. All of these are real contributions.",
+    "source": "https://opensource.guide/how-to-contribute/"
+  },
+  {
+    "id": "community-44",
+    "topic": "community",
+    "difficulty": 1,
+    "question": "What does the good first issue label usually mean?",
+    "answers": [
+      "A task suited to newcomers",
+      "The most urgent bug",
+      "An issue nobody may touch",
+      "The first issue in repository history"
+    ],
+    "correct": 0,
+    "explanation": "The good first issue label marks tasks that are a good starting point for new contributors. GitHub surfaces them to newcomers.",
+    "source": "https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/encouraging-helpful-contributions-to-your-project-with-labels"
+  },
+  {
+    "id": "community-45",
+    "topic": "community",
+    "difficulty": 2,
+    "question": "You found a vulnerability. How should you report it?",
+    "answers": [
+      "Privately, following SECURITY.md",
+      "In a public issue with an exploit",
+      "In a social media post",
+      "Not at all, it is not your business"
+    ],
+    "correct": 0,
+    "explanation": "SECURITY.md explains how to report vulnerabilities. A private report gives maintainers time to ship a fix before disclosure.",
+    "source": "https://docs.github.com/en/code-security/getting-started/adding-a-security-policy-to-your-repository"
+  },
+  {
+    "id": "community-46",
+    "topic": "community",
+    "difficulty": 2,
+    "question": "A maintainer declined your PR because the feature does not fit project goals. What is most reasonable?",
+    "answers": [
+      "Thank them, ask about the reasons and keep the change in your fork if you need it",
+      "Open the same PR again",
+      "Demand an explanation on social media",
+      "Delete your fork"
+    ],
+    "correct": 0,
+    "explanation": "Maintainers decide what fits the project. Ask about the reasons politely. If you need the change, you can maintain it in your fork.",
+    "source": "https://opensource.guide/how-to-contribute/"
+  },
+  {
+    "id": "community-47",
+    "topic": "community",
+    "difficulty": 2,
+    "question": "What does a project governance model describe?",
+    "answers": [
+      "How decisions are made and who is responsible for what",
+      "Logo colors",
+      "The dependency list",
+      "CI settings"
+    ],
+    "correct": 0,
+    "explanation": "Governance describes how decisions are made, how roles are assigned and how disputes are resolved. It often lives in GOVERNANCE.md.",
+    "source": "https://opensource.guide/leadership-and-governance/"
+  },
+  {
+    "id": "community-48",
+    "topic": "community",
+    "difficulty": 3,
+    "question": "How does a contributor usually become a maintainer?",
+    "answers": [
+      "Through steady contributions and trust: current maintainers grant access",
+      "By buying access",
+      "Automatically after the first PR",
+      "By making the most forks"
+    ],
+    "correct": 0,
+    "explanation": "Maintainer rights usually go to people who have helped steadily for a long time: code, reviews, helping others. The decision follows the governance rules.",
+    "source": "https://opensource.guide/leadership-and-governance/"
+  },
+  {
+    "id": "dpg-49",
+    "topic": "dpg",
+    "difficulty": 1,
+    "question": "Who runs the DPG Registry of digital public goods?",
+    "answers": [
+      "The Digital Public Goods Alliance",
+      "GitHub",
+      "The Linux Foundation",
+      "The Open Source Initiative"
+    ],
+    "correct": 0,
+    "explanation": "The DPG Registry is run by the Digital Public Goods Alliance. It lists solutions that passed review against the DPG Standard.",
+    "source": "https://www.digitalpublicgoods.net/registry"
+  },
+  {
+    "id": "dpg-50",
+    "topic": "dpg",
+    "difficulty": 1,
+    "question": "What is the Digital Public Goods Alliance?",
+    "answers": [
+      "A UN-endorsed multi-stakeholder initiative that advances digital public goods",
+      "A commercial app store",
+      "A foundation that issues a cryptocurrency",
+      "A GitHub department"
+    ],
+    "correct": 0,
+    "explanation": "The DPGA is a UN-endorsed multi-stakeholder initiative. It helps discover, develop and deploy digital public goods to reach the Sustainable Development Goals.",
+    "source": "https://www.digitalpublicgoods.net/who-we-are"
+  },
+  {
+    "id": "dpg-51",
+    "topic": "dpg",
+    "difficulty": 1,
+    "question": "What can be a digital public good (DPG)?",
+    "answers": [
+      "Open software, data, AI models, standards and content",
+      "Only mobile apps",
+      "Any free proprietary service",
+      "Only government websites"
+    ],
+    "correct": 0,
+    "explanation": "By definition a DPG is open source software, open data, open AI models, open standards or open content that meets the DPG Standard.",
+    "source": "https://www.digitalpublicgoods.net/standard"
+  },
+  {
+    "id": "dpg-52",
+    "topic": "dpg",
+    "difficulty": 1,
+    "question": "Which UN document defines digital public goods?",
+    "answers": [
+      "The UN Secretary-General's Roadmap for Digital Cooperation",
+      "The 1945 UN Charter",
+      "The Universal Declaration of Human Rights",
+      "The Paris Agreement"
+    ],
+    "correct": 0,
+    "explanation": "The DPG definition comes from the UN Secretary-General's Roadmap for Digital Cooperation (2020).",
+    "source": "https://www.un.org/en/content/digital-cooperation-roadmap/"
+  },
+  {
+    "id": "dpg-53",
+    "topic": "dpg",
+    "difficulty": 1,
+    "question": "What must a DPG relate to under the first indicator of the standard?",
+    "answers": [
+      "The UN Sustainable Development Goals (SDGs)",
+      "Market capitalization",
+      "The number of GitHub stars",
+      "Advertising revenue"
+    ],
+    "correct": 0,
+    "explanation": "The first DPG Standard indicator is relevance to the Sustainable Development Goals. The project must show how it helps attain them.",
+    "source": "https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md"
+  },
+  {
+    "id": "dpg-54",
+    "topic": "dpg",
+    "difficulty": 2,
+    "question": "How many indicators does the DPG Standard have?",
+    "answers": [
+      "9",
+      "3",
+      "5",
+      "12"
+    ],
+    "correct": 0,
+    "explanation": "The DPG Standard has 9 indicators, from SDG relevance and an open license to \"do no harm by design\".",
+    "source": "https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md"
+  },
+  {
+    "id": "dpg-55",
+    "topic": "dpg",
+    "difficulty": 2,
+    "question": "What does the DPG Standard require from the license?",
+    "answers": [
+      "An approved open license",
+      "Any license if the project is free of charge",
+      "No license is needed",
+      "Only a proprietary license with an NDA"
+    ],
+    "correct": 0,
+    "explanation": "A DPG must use an approved open license: OSI-approved for software, open licenses such as CC BY or ODbL for content and data.",
+    "source": "https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md"
+  },
+  {
+    "id": "dpg-56",
+    "topic": "dpg",
+    "difficulty": 2,
+    "question": "What does the platform independence indicator mean?",
+    "answers": [
+      "Closed components must not lock users in: open alternatives must exist",
+      "The project runs on only one OS",
+      "The project does not use the internet",
+      "The project cannot run in the cloud"
+    ],
+    "correct": 0,
+    "explanation": "If a solution depends on closed components, the project must show they can be replaced with open alternatives without major changes.",
+    "source": "https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md"
+  },
+  {
+    "id": "dpg-57",
+    "topic": "dpg",
+    "difficulty": 2,
+    "question": "What documentation must a DPG have?",
+    "answers": [
+      "Enough for others to use and deploy the solution",
+      "Secret, for the authors only",
+      "None, it is optional",
+      "Only a promo video"
+    ],
+    "correct": 0,
+    "explanation": "The documentation indicator requires source code docs, use cases or requirements, so that a technical person can deploy the solution.",
+    "source": "https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md"
+  },
+  {
+    "id": "dpg-58",
+    "topic": "dpg",
+    "difficulty": 2,
+    "question": "What does the data extraction indicator require?",
+    "answers": [
+      "Non-personal data and content can be exported in non-proprietary formats",
+      "Data is stored only in a closed format",
+      "Data is deleted every day",
+      "Access to data is sold"
+    ],
+    "correct": 0,
+    "explanation": "Projects that collect data must let users extract and import non-PII data and content in non-proprietary formats.",
+    "source": "https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md"
+  },
+  {
+    "id": "dpg-59",
+    "topic": "dpg",
+    "difficulty": 3,
+    "question": "What does the \"do no harm by design\" indicator cover?",
+    "answers": [
+      "Data privacy and security, illegal content and protection from harassment",
+      "Only performance",
+      "Only interface design",
+      "Download counts"
+    ],
+    "correct": 0,
+    "explanation": "The ninth indicator covers data privacy and security, inappropriate and illegal content, and protection from harassment.",
+    "source": "https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md"
+  },
+  {
+    "id": "dpg-60",
+    "topic": "dpg",
+    "difficulty": 3,
+    "question": "What does the clear ownership indicator require?",
+    "answers": [
+      "Ownership of the project's assets is clearly defined and documented",
+      "A state company must own the project",
+      "The owner must stay anonymous",
+      "The project must have no owner"
+    ],
+    "correct": 0,
+    "explanation": "It must be clear and documented who owns the project's assets: copyright, trademarks and other rights.",
+    "source": "https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md"
+  },
+  {
+    "id": "dpg-61",
+    "topic": "dpg",
+    "difficulty": 3,
+    "question": "Which solution is listed in the DPG Registry?",
+    "answers": [
+      "DHIS2, an open health information system",
+      "Microsoft Excel",
+      "Adobe Photoshop",
+      "WhatsApp"
+    ],
+    "correct": 0,
+    "explanation": "DHIS2 is an open platform for collecting and analysing health data and is recognised as a digital public good. The other options are proprietary.",
+    "source": "https://www.digitalpublicgoods.net/registry"
   }
 ]

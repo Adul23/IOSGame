@@ -538,5 +538,380 @@
     "correct": 0,
     "explanation": "Open Source Definition была адаптирована из Debian Free Software Guidelines.",
     "source": "https://opensource.org/osd"
+  },
+  {
+    "id": "git-37",
+    "topic": "git",
+    "difficulty": 1,
+    "question": "Что такое ветка (branch) в Git?",
+    "answers": [
+      "Подвижный указатель на коммит, отдельная линия разработки",
+      "Копия репозитория на другом сервере",
+      "Архив с релизом",
+      "Список открытых issue"
+    ],
+    "correct": 0,
+    "explanation": "Ветка в Git — лёгкий подвижный указатель на коммит. Новые коммиты сдвигают его вперёд, поэтому в ветке удобно вести отдельную линию работы.",
+    "source": "https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"
+  },
+  {
+    "id": "git-38",
+    "topic": "git",
+    "difficulty": 1,
+    "question": "Что делает git clone?",
+    "answers": [
+      "Копирует репозиторий вместе с историей на ваш компьютер",
+      "Создаёт fork на GitHub",
+      "Удаляет локальные изменения",
+      "Отправляет коммиты на сервер"
+    ],
+    "correct": 0,
+    "explanation": "git clone создаёт локальную копию репозитория со всей историей и настраивает remote origin.",
+    "source": "https://git-scm.com/docs/git-clone"
+  },
+  {
+    "id": "git-39",
+    "topic": "git",
+    "difficulty": 1,
+    "question": "Что делает git add?",
+    "answers": [
+      "Добавляет изменения в индекс для следующего коммита",
+      "Сразу публикует изменения на GitHub",
+      "Создаёт новую ветку",
+      "Отменяет последний коммит"
+    ],
+    "correct": 0,
+    "explanation": "git add помещает текущее содержимое файлов в индекс (staging area). Следующий git commit сохранит именно подготовленные изменения.",
+    "source": "https://git-scm.com/docs/git-add"
+  },
+  {
+    "id": "git-40",
+    "topic": "git",
+    "difficulty": 2,
+    "question": "Какая команда создаёт ветку и сразу переключается на неё?",
+    "answers": [
+      "git switch -c имя",
+      "git branch -d имя",
+      "git push имя",
+      "git log имя"
+    ],
+    "correct": 0,
+    "explanation": "git switch -c создаёт новую ветку и переключает на неё рабочую копию. Устаревший эквивалент — git checkout -b.",
+    "source": "https://git-scm.com/docs/git-switch"
+  },
+  {
+    "id": "community-41",
+    "topic": "community",
+    "difficulty": 1,
+    "question": "Кто такой maintainer open source проекта?",
+    "answers": [
+      "Участник, который отвечает за проект: ревьюит и принимает изменения, ведёт релизы",
+      "Любой, кто поставил звезду репозиторию",
+      "Только автор первого коммита",
+      "Сотрудник GitHub"
+    ],
+    "correct": 0,
+    "explanation": "Maintainers — участники, которые отвечают за развитие проекта и его организацию: принимают изменения, выпускают релизы, задают направление.",
+    "source": "https://opensource.guide/how-to-contribute/"
+  },
+  {
+    "id": "community-42",
+    "topic": "community",
+    "difficulty": 1,
+    "question": "Кто такой contributor?",
+    "answers": [
+      "Любой, кто внёс вклад в проект",
+      "Только человек с правом записи в репозиторий",
+      "Только оплачиваемый разработчик",
+      "Только автор лицензии"
+    ],
+    "correct": 0,
+    "explanation": "Contributor — любой, кто сделал что-то полезное для проекта: код, документацию, перевод, ревью, отчёт об ошибке.",
+    "source": "https://opensource.guide/how-to-contribute/"
+  },
+  {
+    "id": "community-43",
+    "topic": "community",
+    "difficulty": 1,
+    "question": "Считается ли вкладом исправление документации или перевод?",
+    "answers": [
+      "Да, вклад — не только код",
+      "Нет, только изменения кода",
+      "Только если есть тесты",
+      "Только для мейнтейнеров"
+    ],
+    "correct": 0,
+    "explanation": "Проектам нужны документация, переводы, дизайн, ответы на вопросы и сортировка issue. Всё это — полноценный вклад.",
+    "source": "https://opensource.guide/how-to-contribute/"
+  },
+  {
+    "id": "community-44",
+    "topic": "community",
+    "difficulty": 1,
+    "question": "Что обычно означает метка good first issue?",
+    "answers": [
+      "Задача, подходящая новичкам в проекте",
+      "Самая срочная ошибка",
+      "Issue, который нельзя трогать",
+      "Первый issue в истории репозитория"
+    ],
+    "correct": 0,
+    "explanation": "Метку good first issue ставят на задачи, с которых удобно начать новым участникам. GitHub показывает такие задачи новичкам.",
+    "source": "https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/encouraging-helpful-contributions-to-your-project-with-labels"
+  },
+  {
+    "id": "community-45",
+    "topic": "community",
+    "difficulty": 2,
+    "question": "Вы нашли уязвимость. Как сообщить о ней?",
+    "answers": [
+      "Приватно, по инструкции из SECURITY.md",
+      "Публичным issue с эксплойтом",
+      "Постом в соцсетях",
+      "Никак, это не ваше дело"
+    ],
+    "correct": 0,
+    "explanation": "SECURITY.md описывает, как сообщать об уязвимостях. Приватный отчёт даёт мейнтейнерам время выпустить исправление до огласки.",
+    "source": "https://docs.github.com/en/code-security/getting-started/adding-a-security-policy-to-your-repository"
+  },
+  {
+    "id": "community-46",
+    "topic": "community",
+    "difficulty": 2,
+    "question": "Мейнтейнер отклонил ваш PR: функция не вписывается в цели проекта. Что разумнее всего сделать?",
+    "answers": [
+      "Поблагодарить, уточнить причины и при желании развивать изменение в своём форке",
+      "Открыть тот же PR ещё раз",
+      "Потребовать объяснений в соцсетях",
+      "Удалить свой fork"
+    ],
+    "correct": 0,
+    "explanation": "Мейнтейнеры решают, что подходит проекту. Вежливо уточните причины. Если изменение нужно вам, его можно поддерживать в своём форке.",
+    "source": "https://opensource.guide/how-to-contribute/"
+  },
+  {
+    "id": "community-47",
+    "topic": "community",
+    "difficulty": 2,
+    "question": "Что описывает модель управления (governance) проекта?",
+    "answers": [
+      "Как принимаются решения и кто за что отвечает",
+      "Цвета логотипа",
+      "Список зависимостей",
+      "Настройки CI"
+    ],
+    "correct": 0,
+    "explanation": "Governance описывает, как в проекте принимаются решения, как назначаются роли и как разрешаются споры. Часто это файл GOVERNANCE.md.",
+    "source": "https://opensource.guide/leadership-and-governance/"
+  },
+  {
+    "id": "community-48",
+    "topic": "community",
+    "difficulty": 3,
+    "question": "Как контрибьютор чаще всего становится мейнтейнером?",
+    "answers": [
+      "Через стабильный вклад и доверие: действующие мейнтейнеры дают ему права",
+      "Покупает доступ",
+      "Автоматически после первого PR",
+      "Делает больше всего форков"
+    ],
+    "correct": 0,
+    "explanation": "Обычно права мейнтейнера получают участники, которые долго и стабильно помогают проекту: пишут код, ревьюят, помогают другим. Решение принимают по правилам governance.",
+    "source": "https://opensource.guide/leadership-and-governance/"
+  },
+  {
+    "id": "dpg-49",
+    "topic": "dpg",
+    "difficulty": 1,
+    "question": "Кто ведёт DPG Registry, реестр цифровых общественных благ?",
+    "answers": [
+      "Digital Public Goods Alliance",
+      "GitHub",
+      "Linux Foundation",
+      "Open Source Initiative"
+    ],
+    "correct": 0,
+    "explanation": "DPG Registry ведёт Digital Public Goods Alliance. В реестр попадают решения, прошедшие проверку по DPG Standard.",
+    "source": "https://www.digitalpublicgoods.net/registry"
+  },
+  {
+    "id": "dpg-50",
+    "topic": "dpg",
+    "difficulty": 1,
+    "question": "Что такое Digital Public Goods Alliance?",
+    "answers": [
+      "Многостороннее объединение, поддержанное ООН, для продвижения цифровых общественных благ",
+      "Коммерческий магазин приложений",
+      "Фонд, выпускающий криптовалюту",
+      "Отдел GitHub"
+    ],
+    "correct": 0,
+    "explanation": "DPGA — многостороннее объединение при поддержке ООН. Оно помогает находить, развивать и внедрять цифровые общественные блага ради Целей устойчивого развития.",
+    "source": "https://www.digitalpublicgoods.net/who-we-are"
+  },
+  {
+    "id": "dpg-51",
+    "topic": "dpg",
+    "difficulty": 1,
+    "question": "Что может быть цифровым общественным благом (DPG)?",
+    "answers": [
+      "Открытое ПО, данные, AI-модели, стандарты и контент",
+      "Только мобильные приложения",
+      "Любой бесплатный проприетарный сервис",
+      "Только государственные сайты"
+    ],
+    "correct": 0,
+    "explanation": "По определению DPG это открытое ПО, открытые данные, открытые AI-модели, открытые стандарты и открытый контент, которые соответствуют DPG Standard.",
+    "source": "https://www.digitalpublicgoods.net/standard"
+  },
+  {
+    "id": "dpg-52",
+    "topic": "dpg",
+    "difficulty": 1,
+    "question": "В каком документе ООН дано определение цифровых общественных благ?",
+    "answers": [
+      "Дорожная карта Генсека ООН по цифровому сотрудничеству",
+      "Устав ООН 1945 года",
+      "Всеобщая декларация прав человека",
+      "Парижское соглашение"
+    ],
+    "correct": 0,
+    "explanation": "Определение DPG сформулировано в Дорожной карте Генерального секретаря ООН по цифровому сотрудничеству (2020).",
+    "source": "https://www.un.org/en/content/digital-cooperation-roadmap/"
+  },
+  {
+    "id": "dpg-53",
+    "topic": "dpg",
+    "difficulty": 1,
+    "question": "С чем должен быть связан DPG по первому индикатору стандарта?",
+    "answers": [
+      "С Целями устойчивого развития ООН (ЦУР)",
+      "С рыночной капитализацией",
+      "С числом звёзд на GitHub",
+      "С рекламной выручкой"
+    ],
+    "correct": 0,
+    "explanation": "Первый индикатор DPG Standard — релевантность Целям устойчивого развития (SDGs). Проект должен показать, как он помогает их достижению.",
+    "source": "https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md"
+  },
+  {
+    "id": "dpg-54",
+    "topic": "dpg",
+    "difficulty": 2,
+    "question": "Сколько индикаторов в DPG Standard?",
+    "answers": [
+      "9",
+      "3",
+      "5",
+      "12"
+    ],
+    "correct": 0,
+    "explanation": "DPG Standard состоит из 9 индикаторов: от релевантности ЦУР и открытой лицензии до принципа «не навреди».",
+    "source": "https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md"
+  },
+  {
+    "id": "dpg-55",
+    "topic": "dpg",
+    "difficulty": 2,
+    "question": "Какое требование к лицензии предъявляет DPG Standard?",
+    "answers": [
+      "Использовать одобренную открытую лицензию",
+      "Любая лицензия, если проект бесплатный",
+      "Лицензия не нужна",
+      "Только проприетарная лицензия с NDA"
+    ],
+    "correct": 0,
+    "explanation": "DPG должен использовать одобренную открытую лицензию: для ПО — одобренную OSI, для контента и данных — открытые лицензии вроде CC BY или ODbL.",
+    "source": "https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md"
+  },
+  {
+    "id": "dpg-56",
+    "topic": "dpg",
+    "difficulty": 2,
+    "question": "Что означает индикатор «Платформенная независимость»?",
+    "answers": [
+      "Закрытые компоненты не должны привязывать: нужны открытые альтернативы",
+      "Проект работает только на одной ОС",
+      "Проект не использует интернет",
+      "Проект нельзя запускать в облаке"
+    ],
+    "correct": 0,
+    "explanation": "Если решение зависит от закрытых компонентов, проект должен показать, что их можно заменить открытыми альтернативами без серьёзных изменений.",
+    "source": "https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md"
+  },
+  {
+    "id": "dpg-57",
+    "topic": "dpg",
+    "difficulty": 2,
+    "question": "Какой должна быть документация DPG?",
+    "answers": [
+      "Достаточной, чтобы другие могли использовать и развернуть решение",
+      "Секретной, только для авторов",
+      "Необязательной",
+      "Только видеорекламой"
+    ],
+    "correct": 0,
+    "explanation": "Индикатор «Документация» требует описания исходного кода, сценариев использования или требований, чтобы технически подготовленный человек мог запустить решение.",
+    "source": "https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md"
+  },
+  {
+    "id": "dpg-58",
+    "topic": "dpg",
+    "difficulty": 2,
+    "question": "Что требует индикатор о выгрузке данных?",
+    "answers": [
+      "Возможность выгрузить неперсональные данные и контент в непроприетарных форматах",
+      "Хранить данные только в закрытом формате",
+      "Удалять данные каждые сутки",
+      "Продавать доступ к данным"
+    ],
+    "correct": 0,
+    "explanation": "Проекты, собирающие данные, должны позволять извлекать и импортировать неперсональные данные и контент в непроприетарных форматах.",
+    "source": "https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md"
+  },
+  {
+    "id": "dpg-59",
+    "topic": "dpg",
+    "difficulty": 3,
+    "question": "Что входит в индикатор «Do no harm by design»?",
+    "answers": [
+      "Защита данных, борьба с незаконным контентом и защита от преследований",
+      "Только скорость работы",
+      "Только дизайн интерфейса",
+      "Количество загрузок"
+    ],
+    "correct": 0,
+    "explanation": "Девятый индикатор включает конфиденциальность и безопасность данных, работу с недопустимым и незаконным контентом и защиту от преследований.",
+    "source": "https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md"
+  },
+  {
+    "id": "dpg-60",
+    "topic": "dpg",
+    "difficulty": 3,
+    "question": "Что требует индикатор «Ясное владение»?",
+    "answers": [
+      "Права на результаты проекта должны быть чётко определены и задокументированы",
+      "Проектом должна владеть государственная компания",
+      "Владелец должен быть анонимным",
+      "У проекта не должно быть владельца"
+    ],
+    "correct": 0,
+    "explanation": "Должно быть ясно и документально подтверждено, кому принадлежат активы проекта: авторские права, товарные знаки и другие права.",
+    "source": "https://github.com/DPGAlliance/DPG-Standard/blob/main/standard.md"
+  },
+  {
+    "id": "dpg-61",
+    "topic": "dpg",
+    "difficulty": 3,
+    "question": "Какое решение входит в DPG Registry?",
+    "answers": [
+      "DHIS2, открытая система медицинской информации",
+      "Microsoft Excel",
+      "Adobe Photoshop",
+      "WhatsApp"
+    ],
+    "correct": 0,
+    "explanation": "DHIS2 — открытая платформа для сбора и анализа медицинских данных, признанная цифровым общественным благом. Остальные варианты — проприетарные продукты.",
+    "source": "https://www.digitalpublicgoods.net/registry"
   }
 ]

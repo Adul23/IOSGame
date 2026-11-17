@@ -30,7 +30,7 @@ Parkour.Questions = (() => {
     return validate(ParkourData.questions[lang]);
   }
   function prepare(data, topic, length) {
-    const filtered = topic==='mix' || topic==='custom' ? data : data.filter(q=>q.topic===topic);
+    const filtered = topic==='mix' || topic==='custom' ? data : data.filter(q=>Array.isArray(topic)?topic.includes(q.topic):q.topic===topic);
     // Randomize within difficulty tiers so the course actually gets harder.
     const ordered = [1,2,3].flatMap(d=>shuffle(filtered.filter(q=>q.difficulty===d)));
     const n = length==='all' ? ordered.length : Math.min(Number(length), ordered.length);
