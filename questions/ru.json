@@ -1,0 +1,542 @@
+[
+  {
+    "id": "licenses-01",
+    "topic": "licenses",
+    "difficulty": 1,
+    "question": "Что разрешает лицензия MIT?",
+    "answers": [
+      "Использовать, менять и распространять код",
+      "Только читать код",
+      "Только некоммерческое использование",
+      "Использовать без сохранения уведомлений"
+    ],
+    "correct": 0,
+    "explanation": "MIT допускает широкое использование при сохранении уведомления об авторских правах и текста разрешения.",
+    "source": "https://opensource.org/license/mit"
+  },
+  {
+    "id": "licenses-02",
+    "topic": "licenses",
+    "difficulty": 1,
+    "question": "Какая из лицензий относится к копилефтным?",
+    "answers": [
+      "GPL",
+      "MIT",
+      "BSD 2-Clause",
+      "ISC"
+    ],
+    "correct": 0,
+    "explanation": "GPL сохраняет свободы пользователей в распространяемых производных работах.",
+    "source": "https://www.gnu.org/licenses/copyleft.en.html"
+  },
+  {
+    "id": "licenses-03",
+    "topic": "licenses",
+    "difficulty": 2,
+    "question": "Что явно предоставляет Apache 2.0 помимо авторских разрешений?",
+    "answers": [
+      "Патентную лицензию от контрибьюторов",
+      "Права на все торговые марки",
+      "Право скрыть все уведомления",
+      "Гарантию отсутствия ошибок"
+    ],
+    "correct": 0,
+    "explanation": "Apache 2.0 содержит явное патентное предоставление с установленными условиями.",
+    "source": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
+  {
+    "id": "licenses-04",
+    "topic": "licenses",
+    "difficulty": 1,
+    "question": "Можно ли продавать open source ПО?",
+    "answers": [
+      "Да",
+      "Нет",
+      "Только с разрешения OSI",
+      "Только без исходного кода"
+    ],
+    "correct": 0,
+    "explanation": "Определение OSI допускает продажу; условия выбранной лицензии всё равно нужно соблюдать.",
+    "source": "https://opensource.org/osd"
+  },
+  {
+    "id": "licenses-05",
+    "topic": "licenses",
+    "difficulty": 2,
+    "question": "Публичный репозиторий без лицензии автоматически open source?",
+    "answers": [
+      "Нет, разрешения не предоставлены автоматически",
+      "Да, если есть README",
+      "Да, на GitHub всегда MIT",
+      "Да, после первого fork"
+    ],
+    "correct": 0,
+    "explanation": "Видимость исходников сама по себе не предоставляет лицензионных прав на их использование и распространение.",
+    "source": "https://choosealicense.com/no-permission/"
+  },
+  {
+    "id": "licenses-06",
+    "topic": "licenses",
+    "difficulty": 2,
+    "question": "Что характеризует пермиссивную лицензию?",
+    "answers": [
+      "Минимальные ограничения на повторное использование",
+      "Запрет коммерческого использования",
+      "Обязательная передача авторских прав",
+      "Запрет модификаций"
+    ],
+    "correct": 0,
+    "explanation": "Пермиссивные лицензии допускают широкое повторное использование с небольшим набором условий.",
+    "source": "https://www.gnu.org/licenses/license-list.html"
+  },
+  {
+    "id": "licenses-07",
+    "topic": "licenses",
+    "difficulty": 3,
+    "question": "Вы распространяете изменённую программу под GPLv3. Что обычно требуется?",
+    "answers": [
+      "Предоставить соответствующий исходный код по GPLv3",
+      "Оплатить лицензию FSF",
+      "Опубликовать все личные проекты",
+      "Запретить дальнейшее копирование"
+    ],
+    "correct": 0,
+    "explanation": "При распространении GPLv3 требует соблюдать копилефт и правила предоставления соответствующего исходного кода.",
+    "source": "https://www.gnu.org/licenses/gpl-3.0.html"
+  },
+  {
+    "id": "licenses-08",
+    "topic": "licenses",
+    "difficulty": 3,
+    "question": "Обязывает ли GPL публиковать личные изменения, которые вы не распространяете?",
+    "answers": [
+      "Нет",
+      "Да, всегда",
+      "Только через GitHub",
+      "Только после года использования"
+    ],
+    "correct": 0,
+    "explanation": "GPL позволяет делать и использовать частные изменения без их публикации.",
+    "source": "https://www.gnu.org/licenses/gpl-faq.html#GPLRequireSourcePostedPublic"
+  },
+  {
+    "id": "licenses-09",
+    "topic": "licenses",
+    "difficulty": 3,
+    "question": "Какая лицензия содержит условие о доступе к исходникам при взаимодействии по сети?",
+    "answers": [
+      "GNU AGPLv3",
+      "MIT",
+      "BSD 3-Clause",
+      "ISC"
+    ],
+    "correct": 0,
+    "explanation": "AGPLv3 предусматривает предложение исходников пользователям, взаимодействующим с изменённой версией по сети.",
+    "source": "https://www.gnu.org/licenses/agpl-3.0.html"
+  },
+  {
+    "id": "git-10",
+    "topic": "git",
+    "difficulty": 1,
+    "question": "Что такое fork на GitHub?",
+    "answers": [
+      "Отдельный репозиторий, связанный с исходным",
+      "Удаление ветки",
+      "Команда отмены коммита",
+      "Архив без истории"
+    ],
+    "correct": 0,
+    "explanation": "Fork позволяет независимо развивать копию проекта и предлагать изменения upstream.",
+    "source": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks"
+  },
+  {
+    "id": "git-11",
+    "topic": "git",
+    "difficulty": 1,
+    "question": "Для чего нужен pull request?",
+    "answers": [
+      "Предложить и обсудить изменения",
+      "Загрузить оперативную память",
+      "Купить репозиторий",
+      "Очистить всю историю"
+    ],
+    "correct": 0,
+    "explanation": "Pull request позволяет обсудить и проверить изменения перед слиянием.",
+    "source": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests"
+  },
+  {
+    "id": "git-12",
+    "topic": "git",
+    "difficulty": 1,
+    "question": "Где удобно сообщить о воспроизводимом баге?",
+    "answers": [
+      "В issue проекта",
+      "В случайном коммите",
+      "В имени лицензии",
+      "В теге версии без описания"
+    ],
+    "correct": 0,
+    "explanation": "Issues помогают отслеживать ошибки, задачи и предложения.",
+    "source": "https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues"
+  },
+  {
+    "id": "git-13",
+    "topic": "git",
+    "difficulty": 2,
+    "question": "Что делает git merge?",
+    "answers": [
+      "Объединяет истории разработки",
+      "Всегда удаляет исходную ветку",
+      "Отправляет файлы в облако",
+      "Меняет лицензию"
+    ],
+    "correct": 0,
+    "explanation": "Merge объединяет изменения разных линий разработки.",
+    "source": "https://git-scm.com/docs/git-merge"
+  },
+  {
+    "id": "git-14",
+    "topic": "git",
+    "difficulty": 2,
+    "question": "Что делает git rebase?",
+    "answers": [
+      "Повторно применяет коммиты поверх другой базы",
+      "Создаёт issue",
+      "Шифрует историю",
+      "Скачивает только теги"
+    ],
+    "correct": 0,
+    "explanation": "Rebase переносит последовательность изменений на новую базу; идентификаторы коммитов могут измениться.",
+    "source": "https://git-scm.com/docs/git-rebase"
+  },
+  {
+    "id": "git-15",
+    "topic": "git",
+    "difficulty": 3,
+    "question": "Почему опасен rebase общей опубликованной ветки без согласования?",
+    "answers": [
+      "Он переписывает историю, на которой могли работать другие",
+      "Он меняет язык проекта",
+      "Он всегда удаляет remote",
+      "Он запрещён лицензией MIT"
+    ],
+    "correct": 0,
+    "explanation": "Переписывание общей истории требует координации с коллегами.",
+    "source": "https://git-scm.com/book/en/v2/Git-Branching-Rebasing"
+  },
+  {
+    "id": "git-16",
+    "topic": "git",
+    "difficulty": 1,
+    "question": "Что сохраняет git commit?",
+    "answers": [
+      "Снимок подготовленных изменений",
+      "Только имя пользователя",
+      "Все файлы компьютера",
+      "Только удалённые файлы"
+    ],
+    "correct": 0,
+    "explanation": "Commit записывает подготовленное состояние проекта в историю репозитория.",
+    "source": "https://git-scm.com/docs/git-commit"
+  },
+  {
+    "id": "git-17",
+    "topic": "git",
+    "difficulty": 2,
+    "question": "Что означает конфликт слияния?",
+    "answers": [
+      "Git не смог автоматически согласовать изменения",
+      "Репозиторий заражён",
+      "Лицензия истекла",
+      "Все коммиты потеряны"
+    ],
+    "correct": 0,
+    "explanation": "При конфликте человек выбирает итоговое содержимое и завершает слияние.",
+    "source": "https://git-scm.com/docs/git-merge"
+  },
+  {
+    "id": "git-18",
+    "topic": "git",
+    "difficulty": 2,
+    "question": "Как получить изменения remote без автоматического слияния?",
+    "answers": [
+      "git fetch",
+      "git init",
+      "git add",
+      "git status"
+    ],
+    "correct": 0,
+    "explanation": "Fetch загружает объекты и ссылки; отдельный merge не выполняется.",
+    "source": "https://git-scm.com/docs/git-fetch"
+  },
+  {
+    "id": "git-19",
+    "topic": "git",
+    "difficulty": 3,
+    "question": "Что делает git revert?",
+    "answers": [
+      "Создаёт новый коммит, отменяющий изменения",
+      "Стирает весь репозиторий",
+      "Всегда удаляет последний коммит из истории",
+      "Создаёт fork"
+    ],
+    "correct": 0,
+    "explanation": "Revert записывает обратные изменения новым коммитом.",
+    "source": "https://git-scm.com/docs/git-revert"
+  },
+  {
+    "id": "culture-20",
+    "topic": "culture",
+    "difficulty": 1,
+    "question": "Для чего нужен CONTRIBUTING.md?",
+    "answers": [
+      "Правила участия в проекте",
+      "Хранение паролей",
+      "Список процессоров",
+      "Личная переписка"
+    ],
+    "correct": 0,
+    "explanation": "Руководство объясняет настройку окружения, требования к изменениям и процесс участия.",
+    "source": "https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors"
+  },
+  {
+    "id": "culture-21",
+    "topic": "culture",
+    "difficulty": 1,
+    "question": "Что описывает CODE_OF_CONDUCT?",
+    "answers": [
+      "Нормы поведения сообщества",
+      "Формат машинного кода",
+      "Лицензию компилятора",
+      "Частоту релизов"
+    ],
+    "correct": 0,
+    "explanation": "Кодекс поведения задаёт ожидания взаимодействия и порядок сообщения о нарушениях.",
+    "source": "https://www.contributor-covenant.org/version/2/1/code_of_conduct/"
+  },
+  {
+    "id": "culture-22",
+    "topic": "culture",
+    "difficulty": 2,
+    "question": "В SemVer 2.0.0 несовместимое изменение публичного API увеличивает…",
+    "answers": [
+      "MAJOR",
+      "MINOR",
+      "PATCH",
+      "Только build metadata"
+    ],
+    "correct": 0,
+    "explanation": "При стабильном публичном API несовместимое изменение увеличивает MAJOR.",
+    "source": "https://semver.org/"
+  },
+  {
+    "id": "culture-23",
+    "topic": "culture",
+    "difficulty": 2,
+    "question": "Какая версия следует за 1.4.2 при обратно совместимом исправлении?",
+    "answers": [
+      "1.4.3",
+      "2.0.0",
+      "1.5.0",
+      "1.4.2-major"
+    ],
+    "correct": 0,
+    "explanation": "Обратно совместимые исправления увеличивают PATCH.",
+    "source": "https://semver.org/"
+  },
+  {
+    "id": "culture-24",
+    "topic": "culture",
+    "difficulty": 2,
+    "question": "Добавлена обратно совместимая функция к 1.4.2. Какая версия по SemVer?",
+    "answers": [
+      "1.5.0",
+      "1.4.3",
+      "2.0.0",
+      "1.4.2"
+    ],
+    "correct": 0,
+    "explanation": "Новая совместимая функциональность увеличивает MINOR и обнуляет PATCH.",
+    "source": "https://semver.org/"
+  },
+  {
+    "id": "culture-25",
+    "topic": "culture",
+    "difficulty": 1,
+    "question": "Для кого прежде всего пишут changelog?",
+    "answers": [
+      "Для людей, использующих проект",
+      "Только для компилятора",
+      "Для сборщика мусора",
+      "Для DNS-сервера"
+    ],
+    "correct": 0,
+    "explanation": "Changelog помогает людям понять значимые изменения между версиями.",
+    "source": "https://keepachangelog.com/en/1.1.0/"
+  },
+  {
+    "id": "culture-26",
+    "topic": "culture",
+    "difficulty": 1,
+    "question": "Что полезнее всего приложить к bug report?",
+    "answers": [
+      "Шаги воспроизведения и ожидаемый результат",
+      "Только слово «сломалось»",
+      "Пароль от аккаунта",
+      "Несвязанный скриншот"
+    ],
+    "correct": 0,
+    "explanation": "Конкретные шаги и контекст позволяют проверить и исправить проблему.",
+    "source": "https://opensource.guide/how-to-contribute/"
+  },
+  {
+    "id": "culture-27",
+    "topic": "culture",
+    "difficulty": 2,
+    "question": "Что стоит сделать перед большим изменением чужого проекта?",
+    "answers": [
+      "Обсудить идею с мейнтейнерами",
+      "Переписать всё без обсуждения",
+      "Потребовать доступ администратора",
+      "Удалить тесты"
+    ],
+    "correct": 0,
+    "explanation": "Раннее обсуждение помогает согласовать направление работы и ожидания.",
+    "source": "https://opensource.guide/how-to-contribute/"
+  },
+  {
+    "id": "culture-28",
+    "topic": "culture",
+    "difficulty": 3,
+    "question": "Что означает версия 0.y.z в SemVer?",
+    "answers": [
+      "Начальная разработка; публичный API нестабилен",
+      "Гарантированно стабильный API",
+      "Проект обязательно заброшен",
+      "Нельзя публиковать исходники"
+    ],
+    "correct": 0,
+    "explanation": "SemVer резервирует major 0 для начальной разработки, когда API может меняться.",
+    "source": "https://semver.org/"
+  },
+  {
+    "id": "history-29",
+    "topic": "history",
+    "difficulty": 1,
+    "question": "Кто начал разработку ядра Linux?",
+    "answers": [
+      "Линус Торвальдс",
+      "Ричард Столлман",
+      "Тим Бернерс-Ли",
+      "Гвидо ван Россум"
+    ],
+    "correct": 0,
+    "explanation": "Линус Торвальдс начал Linux в 1991 году.",
+    "source": "https://www.kernel.org/linux.html"
+  },
+  {
+    "id": "history-30",
+    "topic": "history",
+    "difficulty": 1,
+    "question": "В каком году был анонсирован проект GNU?",
+    "answers": [
+      "1983",
+      "1991",
+      "1998",
+      "2008"
+    ],
+    "correct": 0,
+    "explanation": "Ричард Столлман объявил о GNU в сентябре 1983 года.",
+    "source": "https://www.gnu.org/gnu/initial-announcement.html"
+  },
+  {
+    "id": "history-31",
+    "topic": "history",
+    "difficulty": 1,
+    "question": "Что означает рекурсивное сокращение GNU?",
+    "answers": [
+      "GNU’s Not Unix",
+      "Global Network Utility",
+      "General New User",
+      "Git Network Unit"
+    ],
+    "correct": 0,
+    "explanation": "Название GNU — рекурсивный акроним GNU’s Not Unix.",
+    "source": "https://www.gnu.org/gnu/about-gnu.html"
+  },
+  {
+    "id": "history-32",
+    "topic": "history",
+    "difficulty": 2,
+    "question": "Когда была основана Free Software Foundation?",
+    "answers": [
+      "1985",
+      "1971",
+      "1998",
+      "2005"
+    ],
+    "correct": 0,
+    "explanation": "FSF основана в 1985 году для поддержки свободы пользователей компьютеров.",
+    "source": "https://www.fsf.org/about/"
+  },
+  {
+    "id": "history-33",
+    "topic": "history",
+    "difficulty": 2,
+    "question": "В каком году основана Open Source Initiative?",
+    "answers": [
+      "1998",
+      "1983",
+      "1991",
+      "2010"
+    ],
+    "correct": 0,
+    "explanation": "OSI основана в 1998 году.",
+    "source": "https://opensource.org/history"
+  },
+  {
+    "id": "history-34",
+    "topic": "history",
+    "difficulty": 1,
+    "question": "Linux в строгом техническом смысле — это…",
+    "answers": [
+      "Ядро операционной системы",
+      "Текстовый редактор",
+      "Веб-браузер",
+      "Система контроля версий"
+    ],
+    "correct": 0,
+    "explanation": "Ядро Linux используют вместе с другими компонентами для создания операционных систем.",
+    "source": "https://www.kernel.org/linux.html"
+  },
+  {
+    "id": "history-35",
+    "topic": "history",
+    "difficulty": 2,
+    "question": "«Free» в free software прежде всего означает…",
+    "answers": [
+      "Свободу пользователей",
+      "Обязательную нулевую цену",
+      "Отсутствие лицензии",
+      "Отсутствие авторов"
+    ],
+    "correct": 0,
+    "explanation": "Free software относится к свободам, а не к обязательной бесплатности.",
+    "source": "https://www.gnu.org/philosophy/free-sw.html"
+  },
+  {
+    "id": "history-36",
+    "topic": "history",
+    "difficulty": 3,
+    "question": "На чём основано Open Source Definition?",
+    "answers": [
+      "Debian Free Software Guidelines",
+      "Условиях App Store",
+      "Правилах HTML",
+      "Лицензии Windows"
+    ],
+    "correct": 0,
+    "explanation": "Open Source Definition была адаптирована из Debian Free Software Guidelines.",
+    "source": "https://opensource.org/osd"
+  }
+]

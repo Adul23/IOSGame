@@ -1,0 +1,23 @@
+name: Ошибка в вопросе
+description: Исправление ответа, перевода или пояснения
+title: "[Content] "
+labels: [content]
+body:
+  - type: input
+    id: question
+    attributes:
+      label: ID вопроса и язык
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Что неверно и как исправить
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Подтверждающий первоисточник
+    validations:
+      required: true

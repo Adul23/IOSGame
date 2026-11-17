@@ -1,0 +1,542 @@
+[
+  {
+    "id": "licenses-01",
+    "topic": "licenses",
+    "difficulty": 1,
+    "question": "What does the MIT license allow?",
+    "answers": [
+      "Use, modify and distribute code",
+      "Read code only",
+      "Non-commercial use only",
+      "Use without preserving notices"
+    ],
+    "correct": 0,
+    "explanation": "MIT grants broad permissions while requiring the copyright and permission notices.",
+    "source": "https://opensource.org/license/mit"
+  },
+  {
+    "id": "licenses-02",
+    "topic": "licenses",
+    "difficulty": 1,
+    "question": "Which license is copyleft?",
+    "answers": [
+      "GPL",
+      "MIT",
+      "BSD 2-Clause",
+      "ISC"
+    ],
+    "correct": 0,
+    "explanation": "GPL preserves user freedoms in distributed derivative works.",
+    "source": "https://www.gnu.org/licenses/copyleft.en.html"
+  },
+  {
+    "id": "licenses-03",
+    "topic": "licenses",
+    "difficulty": 2,
+    "question": "What does Apache 2.0 explicitly grant besides copyright permissions?",
+    "answers": [
+      "A patent license from contributors",
+      "Rights to all trademarks",
+      "Permission to remove all notices",
+      "A bug-free warranty"
+    ],
+    "correct": 0,
+    "explanation": "Apache 2.0 includes an explicit patent grant subject to its terms.",
+    "source": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
+  {
+    "id": "licenses-04",
+    "topic": "licenses",
+    "difficulty": 1,
+    "question": "Can open source software be sold?",
+    "answers": [
+      "Yes",
+      "No",
+      "Only with OSI permission",
+      "Only without source code"
+    ],
+    "correct": 0,
+    "explanation": "The OSI definition permits selling software; the applicable license still must be followed.",
+    "source": "https://opensource.org/osd"
+  },
+  {
+    "id": "licenses-05",
+    "topic": "licenses",
+    "difficulty": 2,
+    "question": "Is a public repository without a license automatically open source?",
+    "answers": [
+      "No, permissions are not automatically granted",
+      "Yes, if it has a README",
+      "Yes, GitHub always applies MIT",
+      "Yes, after the first fork"
+    ],
+    "correct": 0,
+    "explanation": "Source visibility alone does not grant a license to use and redistribute it.",
+    "source": "https://choosealicense.com/no-permission/"
+  },
+  {
+    "id": "licenses-06",
+    "topic": "licenses",
+    "difficulty": 2,
+    "question": "What characterizes a permissive license?",
+    "answers": [
+      "Few restrictions on reuse",
+      "A ban on commercial use",
+      "Mandatory copyright transfer",
+      "A ban on modifications"
+    ],
+    "correct": 0,
+    "explanation": "Permissive licenses allow broad reuse with relatively few conditions.",
+    "source": "https://www.gnu.org/licenses/license-list.html"
+  },
+  {
+    "id": "licenses-07",
+    "topic": "licenses",
+    "difficulty": 3,
+    "question": "You distribute a modified GPLv3 program. What is generally required?",
+    "answers": [
+      "Provide corresponding source under GPLv3",
+      "Pay FSF a license fee",
+      "Publish all personal projects",
+      "Prohibit further copying"
+    ],
+    "correct": 0,
+    "explanation": "GPLv3 distribution requires compliance with copyleft and corresponding-source provisions.",
+    "source": "https://www.gnu.org/licenses/gpl-3.0.html"
+  },
+  {
+    "id": "licenses-08",
+    "topic": "licenses",
+    "difficulty": 3,
+    "question": "Does GPL require publishing private modifications you do not distribute?",
+    "answers": [
+      "No",
+      "Yes, always",
+      "Only via GitHub",
+      "Only after one year"
+    ],
+    "correct": 0,
+    "explanation": "GPL allows private modifications and use without publication.",
+    "source": "https://www.gnu.org/licenses/gpl-faq.html#GPLRequireSourcePostedPublic"
+  },
+  {
+    "id": "licenses-09",
+    "topic": "licenses",
+    "difficulty": 3,
+    "question": "Which license includes a source-offer condition for network interaction?",
+    "answers": [
+      "GNU AGPLv3",
+      "MIT",
+      "BSD 3-Clause",
+      "ISC"
+    ],
+    "correct": 0,
+    "explanation": "AGPLv3 requires offering source to users interacting remotely with a modified version.",
+    "source": "https://www.gnu.org/licenses/agpl-3.0.html"
+  },
+  {
+    "id": "git-10",
+    "topic": "git",
+    "difficulty": 1,
+    "question": "What is a fork on GitHub?",
+    "answers": [
+      "A separate repository linked to an upstream",
+      "Deleting a branch",
+      "A command to undo a commit",
+      "An archive without history"
+    ],
+    "correct": 0,
+    "explanation": "A fork lets you develop independently and propose changes upstream.",
+    "source": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks"
+  },
+  {
+    "id": "git-11",
+    "topic": "git",
+    "difficulty": 1,
+    "question": "What is a pull request for?",
+    "answers": [
+      "Propose and discuss changes",
+      "Download RAM",
+      "Buy a repository",
+      "Erase all history"
+    ],
+    "correct": 0,
+    "explanation": "A pull request supports discussion and review before merging changes.",
+    "source": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests"
+  },
+  {
+    "id": "git-12",
+    "topic": "git",
+    "difficulty": 1,
+    "question": "Where can you report a reproducible bug?",
+    "answers": [
+      "In a project issue",
+      "In a random commit",
+      "In the license name",
+      "In an unexplained version tag"
+    ],
+    "correct": 0,
+    "explanation": "Issues track bugs, tasks and proposals.",
+    "source": "https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues"
+  },
+  {
+    "id": "git-13",
+    "topic": "git",
+    "difficulty": 2,
+    "question": "What does git merge do?",
+    "answers": [
+      "Combines development histories",
+      "Always deletes the source branch",
+      "Uploads files to the cloud",
+      "Changes the license"
+    ],
+    "correct": 0,
+    "explanation": "Merge combines changes from different lines of development.",
+    "source": "https://git-scm.com/docs/git-merge"
+  },
+  {
+    "id": "git-14",
+    "topic": "git",
+    "difficulty": 2,
+    "question": "What does git rebase do?",
+    "answers": [
+      "Reapplies commits onto another base",
+      "Creates an issue",
+      "Encrypts history",
+      "Downloads tags only"
+    ],
+    "correct": 0,
+    "explanation": "Rebase replays changes onto a new base; commit IDs may change.",
+    "source": "https://git-scm.com/docs/git-rebase"
+  },
+  {
+    "id": "git-15",
+    "topic": "git",
+    "difficulty": 3,
+    "question": "Why is rebasing a shared published branch without coordination risky?",
+    "answers": [
+      "It rewrites history others may depend on",
+      "It changes the project language",
+      "It always deletes the remote",
+      "It is prohibited by MIT"
+    ],
+    "correct": 0,
+    "explanation": "Rewriting shared history requires coordination with collaborators.",
+    "source": "https://git-scm.com/book/en/v2/Git-Branching-Rebasing"
+  },
+  {
+    "id": "git-16",
+    "topic": "git",
+    "difficulty": 1,
+    "question": "What does git commit record?",
+    "answers": [
+      "A snapshot of staged changes",
+      "Only the username",
+      "All files on the computer",
+      "Only deleted files"
+    ],
+    "correct": 0,
+    "explanation": "A commit records the staged project state in repository history.",
+    "source": "https://git-scm.com/docs/git-commit"
+  },
+  {
+    "id": "git-17",
+    "topic": "git",
+    "difficulty": 2,
+    "question": "What does a merge conflict mean?",
+    "answers": [
+      "Git could not automatically reconcile changes",
+      "The repository is infected",
+      "The license expired",
+      "All commits were lost"
+    ],
+    "correct": 0,
+    "explanation": "A person resolves the content and completes the merge.",
+    "source": "https://git-scm.com/docs/git-merge"
+  },
+  {
+    "id": "git-18",
+    "topic": "git",
+    "difficulty": 2,
+    "question": "How do you get remote changes without automatically merging?",
+    "answers": [
+      "git fetch",
+      "git init",
+      "git add",
+      "git status"
+    ],
+    "correct": 0,
+    "explanation": "Fetch downloads objects and refs without performing a separate merge.",
+    "source": "https://git-scm.com/docs/git-fetch"
+  },
+  {
+    "id": "git-19",
+    "topic": "git",
+    "difficulty": 3,
+    "question": "What does git revert do?",
+    "answers": [
+      "Creates a new commit reversing changes",
+      "Erases the whole repository",
+      "Always removes the last commit from history",
+      "Creates a fork"
+    ],
+    "correct": 0,
+    "explanation": "Revert records inverse changes as a new commit.",
+    "source": "https://git-scm.com/docs/git-revert"
+  },
+  {
+    "id": "culture-20",
+    "topic": "culture",
+    "difficulty": 1,
+    "question": "What is CONTRIBUTING.md for?",
+    "answers": [
+      "Contribution guidelines",
+      "Storing passwords",
+      "A processor list",
+      "Private messages"
+    ],
+    "correct": 0,
+    "explanation": "Contribution guidelines explain setup, requirements and the contribution process.",
+    "source": "https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors"
+  },
+  {
+    "id": "culture-21",
+    "topic": "culture",
+    "difficulty": 1,
+    "question": "What does a CODE_OF_CONDUCT describe?",
+    "answers": [
+      "Community behavior expectations",
+      "Machine code format",
+      "Compiler licensing",
+      "Release frequency"
+    ],
+    "correct": 0,
+    "explanation": "A code of conduct sets expectations for interaction and reporting misconduct.",
+    "source": "https://www.contributor-covenant.org/version/2/1/code_of_conduct/"
+  },
+  {
+    "id": "culture-22",
+    "topic": "culture",
+    "difficulty": 2,
+    "question": "In SemVer 2.0.0, an incompatible public API change increments…",
+    "answers": [
+      "MAJOR",
+      "MINOR",
+      "PATCH",
+      "Only build metadata"
+    ],
+    "correct": 0,
+    "explanation": "For a stable public API, an incompatible change increments MAJOR.",
+    "source": "https://semver.org/"
+  },
+  {
+    "id": "culture-23",
+    "topic": "culture",
+    "difficulty": 2,
+    "question": "What follows 1.4.2 for a backward-compatible bug fix?",
+    "answers": [
+      "1.4.3",
+      "2.0.0",
+      "1.5.0",
+      "1.4.2-major"
+    ],
+    "correct": 0,
+    "explanation": "Backward-compatible bug fixes increment PATCH.",
+    "source": "https://semver.org/"
+  },
+  {
+    "id": "culture-24",
+    "topic": "culture",
+    "difficulty": 2,
+    "question": "A backward-compatible feature is added to 1.4.2. Which SemVer version?",
+    "answers": [
+      "1.5.0",
+      "1.4.3",
+      "2.0.0",
+      "1.4.2"
+    ],
+    "correct": 0,
+    "explanation": "New compatible functionality increments MINOR and resets PATCH.",
+    "source": "https://semver.org/"
+  },
+  {
+    "id": "culture-25",
+    "topic": "culture",
+    "difficulty": 1,
+    "question": "Who is a changelog primarily written for?",
+    "answers": [
+      "People using the project",
+      "Only the compiler",
+      "The garbage collector",
+      "A DNS server"
+    ],
+    "correct": 0,
+    "explanation": "A changelog helps people understand meaningful changes between releases.",
+    "source": "https://keepachangelog.com/en/1.1.0/"
+  },
+  {
+    "id": "culture-26",
+    "topic": "culture",
+    "difficulty": 1,
+    "question": "What is most useful in a bug report?",
+    "answers": [
+      "Reproduction steps and expected behavior",
+      "Only the word “broken”",
+      "Your account password",
+      "An unrelated screenshot"
+    ],
+    "correct": 0,
+    "explanation": "Concrete steps and context help maintainers reproduce and fix the problem.",
+    "source": "https://opensource.guide/how-to-contribute/"
+  },
+  {
+    "id": "culture-27",
+    "topic": "culture",
+    "difficulty": 2,
+    "question": "What should you do before a large change to another project?",
+    "answers": [
+      "Discuss the idea with maintainers",
+      "Rewrite everything without discussion",
+      "Demand administrator access",
+      "Delete tests"
+    ],
+    "correct": 0,
+    "explanation": "Early discussion helps align the proposed work with project expectations.",
+    "source": "https://opensource.guide/how-to-contribute/"
+  },
+  {
+    "id": "culture-28",
+    "topic": "culture",
+    "difficulty": 3,
+    "question": "What does version 0.y.z mean in SemVer?",
+    "answers": [
+      "Initial development; public API is unstable",
+      "A guaranteed stable API",
+      "The project is necessarily abandoned",
+      "Source cannot be published"
+    ],
+    "correct": 0,
+    "explanation": "SemVer uses major zero for initial development, when the API may change.",
+    "source": "https://semver.org/"
+  },
+  {
+    "id": "history-29",
+    "topic": "history",
+    "difficulty": 1,
+    "question": "Who started developing the Linux kernel?",
+    "answers": [
+      "Linus Torvalds",
+      "Richard Stallman",
+      "Tim Berners-Lee",
+      "Guido van Rossum"
+    ],
+    "correct": 0,
+    "explanation": "Linus Torvalds started Linux in 1991.",
+    "source": "https://www.kernel.org/linux.html"
+  },
+  {
+    "id": "history-30",
+    "topic": "history",
+    "difficulty": 1,
+    "question": "In which year was the GNU project announced?",
+    "answers": [
+      "1983",
+      "1991",
+      "1998",
+      "2008"
+    ],
+    "correct": 0,
+    "explanation": "Richard Stallman announced GNU in September 1983.",
+    "source": "https://www.gnu.org/gnu/initial-announcement.html"
+  },
+  {
+    "id": "history-31",
+    "topic": "history",
+    "difficulty": 1,
+    "question": "What does the recursive acronym GNU stand for?",
+    "answers": [
+      "GNU’s Not Unix",
+      "Global Network Utility",
+      "General New User",
+      "Git Network Unit"
+    ],
+    "correct": 0,
+    "explanation": "GNU is the recursive acronym GNU’s Not Unix.",
+    "source": "https://www.gnu.org/gnu/about-gnu.html"
+  },
+  {
+    "id": "history-32",
+    "topic": "history",
+    "difficulty": 2,
+    "question": "When was the Free Software Foundation founded?",
+    "answers": [
+      "1985",
+      "1971",
+      "1998",
+      "2005"
+    ],
+    "correct": 0,
+    "explanation": "FSF was founded in 1985 to support computer user freedom.",
+    "source": "https://www.fsf.org/about/"
+  },
+  {
+    "id": "history-33",
+    "topic": "history",
+    "difficulty": 2,
+    "question": "In which year was the Open Source Initiative founded?",
+    "answers": [
+      "1998",
+      "1983",
+      "1991",
+      "2010"
+    ],
+    "correct": 0,
+    "explanation": "OSI was founded in 1998.",
+    "source": "https://opensource.org/history"
+  },
+  {
+    "id": "history-34",
+    "topic": "history",
+    "difficulty": 1,
+    "question": "In the strict technical sense, Linux is…",
+    "answers": [
+      "An operating system kernel",
+      "A text editor",
+      "A web browser",
+      "A version control system"
+    ],
+    "correct": 0,
+    "explanation": "The Linux kernel is combined with other components to form operating systems.",
+    "source": "https://www.kernel.org/linux.html"
+  },
+  {
+    "id": "history-35",
+    "topic": "history",
+    "difficulty": 2,
+    "question": "“Free” in free software primarily refers to…",
+    "answers": [
+      "User freedom",
+      "A mandatory zero price",
+      "No license",
+      "No authors"
+    ],
+    "correct": 0,
+    "explanation": "Free software concerns freedom rather than a mandatory zero price.",
+    "source": "https://www.gnu.org/philosophy/free-sw.html"
+  },
+  {
+    "id": "history-36",
+    "topic": "history",
+    "difficulty": 3,
+    "question": "What is the Open Source Definition based on?",
+    "answers": [
+      "Debian Free Software Guidelines",
+      "App Store terms",
+      "HTML rules",
+      "The Windows license"
+    ],
+    "correct": 0,
+    "explanation": "The Open Source Definition was adapted from the Debian Free Software Guidelines.",
+    "source": "https://opensource.org/osd"
+  }
+]

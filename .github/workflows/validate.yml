@@ -1,0 +1,21 @@
+name: Validate question packs
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install jsonschema==4.23.0
+      - run: python scripts/validate-questions.py
+      - run: python scripts/bundle-data.py
+      - name: Ensure the file-open fallback is up to date
+        run: git diff --exit-code -- js/bundled-data.js
+      - run: node --test tests/*.test.cjs
